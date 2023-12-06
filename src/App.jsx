@@ -1,7 +1,14 @@
 import Header from './components/Header';
 
-export default function App() {
+function App() {
   return (
-    <Header />
-  )
+    <>
+      <Header/>
+      <main>
+
+      </main>
+    </>
+  );
 }
+
+export default App;
