@@ -1,18 +1,26 @@
-export default function UserInput() {
-    return (
-        <div id="user-input">
-            <div className="input-group">
-                <label>Intial investment</label>
-                <input/>
-                <label>Annual Investment</label>
-                <input/>
-            </div>
-            <div className="input-group">
-                <label>Expected return</label>
-                <input/>
-                <label>Duration</label>
-                <input/>
-            </div>
-        </div>
-    );
+export default function UserInput({}) {
+  return (
+    <section id="user-input">
+      <div className="input-group">
+        <p>
+          <label>Intial investment</label>
+        <input type="number" required />         
+        </p>
+        <p>
+          <label>Annual Investment</label>
+        <input type="number" required />
+        </p>
+      </div>
+      <div className="input-group">
+        <p>
+          <label>Expected return</label>
+        <input type="number" required />
+        </p>
+        <p>
+          <label>Duration</label>
+        <input type="number" required />
+        </p>
+      </div>
+    </section>
+  );
 }
